@@ -12,6 +12,11 @@
                     <span class="text">Kategori</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="{{ route('blog.index') }}">
+                    <span class="text">Blog</span>
+                </a>
+            </li>
 
         </ul>
     </nav>

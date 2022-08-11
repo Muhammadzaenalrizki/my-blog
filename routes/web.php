@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\LoginController;
@@ -26,3 +27,5 @@ Route::post('/auth', [LoginController::class, 'index'])->name('auth');
 Route::middleware('auth')->get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
 // KATEGORI
 Route::resource('kategori', KategoriController::class);
+// BLOG
+Route::resource('blog', BlogController::class);

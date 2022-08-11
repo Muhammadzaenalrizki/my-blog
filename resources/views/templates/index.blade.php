@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/fullcalendar.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/fullcalendar.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
+    @yield('css')
 </head>
 
 <body>
@@ -35,6 +36,7 @@
 
     @yield('content')
     @yield('footer')
+    @yield('js')
     <!-- ========= All Javascript files linkup ======== -->
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/Chart.min.js') }}"></script>
